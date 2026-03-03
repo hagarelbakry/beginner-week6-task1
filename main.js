@@ -6,7 +6,10 @@ btn.onclick = function() {
     let minutes = currentTime.getMinutes();
     let seconds = currentTime.getSeconds();
 
-    alert(`Current Time: ${hours}:${minutes}:${seconds}`);
+    Swal.fire({
+    title: "Current Time",
+    text: `Current Time: ${hours}:${minutes}:${seconds}`
+    });
 };
 
 //                      OR
